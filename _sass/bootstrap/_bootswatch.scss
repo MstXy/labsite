@@ -502,7 +502,7 @@ a.list-group-item {
 }
 
 .panel {
-  border: 1px solid $navbar-default-border;
+  border: 1px solid $panel-footer-bg;
   @include shadow();
 
   &-default {

@@ -42,14 +42,24 @@ $link-hover-decoration: underline !default;
 //== Typography
 //
 //## Font, line-height, and color for body text, headings, and more.
+@font-face {
+    font-family: 'Monsterrat';
+    src: url(/fonts/Montserrat/Montserrat-VariableFont_wght.ttf) format('truetype-variations');
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Monsterrat';
+    src: url(/fonts/Montserrat/Montserrat-Italic-VariableFont_wght.ttf) format('truetype-variations');
+    font-style: italic;
+}
 
 $font-family-sans-serif:  "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
 $font-family-serif:       Georgia, "Times New Roman", Times, serif !default;
 //** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
 $font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace !default;
-$font-family-base:        $font-family-sans-serif !default;
+$font-family-base:        'Monsterrat' !default;
 
-$font-size-base:          16px !default;
+$font-size-base:          17px !default;
 $font-size-large:         ceil(($font-size-base * 1.25)) !default; // ~18px
 $font-size-small:         ceil(($font-size-base * 0.85)) !default; // ~12px
 
@@ -358,29 +368,29 @@ $container-lg:                 $container-large-desktop !default;
 //##
 
 // Basics of a navbar
-$navbar-height:                    50px !default;
+$navbar-height:                    100px !default;
 $navbar-margin-bottom:             $line-height-computed !default;
 $navbar-border-radius:             $border-radius-base !default;
 $navbar-padding-horizontal:        floor(($grid-gutter-width / 2)) !default;
 $navbar-padding-vertical:          (($navbar-height - $line-height-computed) / 2) !default;
 $navbar-collapse-max-height:       340px !default;
 
-$navbar-default-color:             $text-color !default;
-$navbar-default-bg:                #f8f8f8 !default;
-$navbar-default-border:            $input-border !default;
+$navbar-default-color:             #fff !default;
+$navbar-default-bg:                #000 !default;
+$navbar-default-border:            #000 !default;
 
 // Navbar links
-$navbar-default-link-color:                $gray-light !default;
-$navbar-default-link-hover-color:          $gray-dark !default;
+$navbar-default-link-color:                #fff !default;
+$navbar-default-link-hover-color:          #acacac !default;
 $navbar-default-link-hover-bg:             transparent !default;
-$navbar-default-link-active-color:         $navbar-default-link-hover-color !default;
-$navbar-default-link-active-bg:            transparent !default;
-$navbar-default-link-disabled-color:       $gray-lighter !default;
+$navbar-default-link-active-color:         #e2e2e2 !default;
+$navbar-default-link-active-bg:            darken($navbar-default-bg, 6.5%) !default;
+$navbar-default-link-disabled-color:       #fff !default;
 $navbar-default-link-disabled-bg:          transparent !default;
 
 // Navbar brand label
-$navbar-default-brand-color:               $navbar-default-link-hover-color !default;
-$navbar-default-brand-hover-color:         $navbar-default-link-hover-color !default;
+$navbar-default-brand-color:               #fff  !default;
+$navbar-default-brand-hover-color:         #acacac  !default;
 $navbar-default-brand-hover-bg:            transparent !default;
 
 // Navbar toggle
@@ -608,7 +618,7 @@ $modal-backdrop-bg:           #000 !default;
 //** Modal backdrop opacity
 $modal-backdrop-opacity:      .5 !default;
 //** Modal header border color
-$modal-header-border-color:   #e5e5e5 !default;
+$modal-header-border-color:   #181818 !default;
 //** Modal footer border color
 $modal-footer-border-color:   $modal-header-border-color !default;
 
@@ -706,16 +716,17 @@ $list-group-link-heading-color: #333 !default;
 $panel-bg:                    #fff !default;
 $panel-body-padding:          15px !default;
 $panel-heading-padding:       10px 15px !default;
-$panel-footer-padding:        $panel-heading-padding !default;
+$panel-footer-padding:        100px 15px !default;
 $panel-border-radius:         $border-radius-base !default;
 
 //** Border color for elements within panels
 $panel-inner-border:          transparent !default;
-$panel-footer-bg:             #f5f5f5 !default;
+$panel-footer-bg:             #1b1b1b !default;
+$panel-footer-color:          #fff !default;
 
 $panel-default-text:          $gray-dark !default;
 $panel-default-border:        transparent !default;
-$panel-default-heading-bg:    #f5f5f5 !default;
+$panel-default-heading-bg:    #000000 !default;
 
 $panel-primary-text:          #fff !default;
 $panel-primary-border:        transparent !default;

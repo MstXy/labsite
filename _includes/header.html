@@ -8,16 +8,17 @@
 		<span class="icon-bar"></span>
 	  </button>
 	
-    <a class="navbar-brand" href="{{ site.url }}{{ site.baseurl }}/">Allan Lab @ Leiden University</a>
+    <a class="navbar-brand" href="{{ site.url }}{{ site.baseurl }}/">Some Lab</a>
 	</div>
+	{% assign current = page.url | downcase | split: '/' %}
 	<div class="collapse navbar-collapse" id="navbar-collapse-1">
 	  <ul class="nav navbar-nav navbar-right">
-		<li><a href="{{ site.url }}{{ site.baseurl }}/">Home</a></li>
-		<li><a href="{{ site.url }}{{ site.baseurl }}/team">Team</a></li>
-		<li><a href="{{ site.url }}{{ site.baseurl }}/vacancies">Vacancies</a></li>
-		<li><a href="{{ site.url }}{{ site.baseurl }}/publications">Publications</a></li>
-		<li><a href="{{ site.url }}{{ site.baseurl }}/research">Research</a></li>
-		<li><a href="{{ site.url }}{{ site.baseurl }}/pictures">(Pics)</a></li>
+		<li><a href="{{ site.url }}{{ site.baseurl }}/" {% if current[1] == null %}class='current'{% endif %}>Home</a></li>
+		<li><a href="{{ site.url }}{{ site.baseurl }}/team" {% if current[1] == 'team' %}class='current'{% endif %}>Team</a></li>
+		<li><a href="{{ site.url }}{{ site.baseurl }}/vacancies" {% if current[1] == 'vacancies' %}class='current'{% endif %}>Vacancies</a></li>
+		<li><a href="{{ site.url }}{{ site.baseurl }}/publications" {% if current[1] == 'publications' %}class='current'{% endif %}>Publications</a></li>
+		<li><a href="{{ site.url }}{{ site.baseurl }}/research" {% if current[1] == 'research' %}class='current'{% endif %}>Research</a></li>
+		<li><a href="{{ site.url }}{{ site.baseurl }}/pictures" {% if current[1] == 'pictures' %}class='current'{% endif %}>(Pics)</a></li>
 	  </ul>
 	</div>
   </div>
