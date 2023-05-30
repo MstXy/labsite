@@ -44,12 +44,12 @@ $link-hover-decoration: underline !default;
 //## Font, line-height, and color for body text, headings, and more.
 @font-face {
     font-family: 'Monsterrat';
-    src: url(/fonts/Montserrat/Montserrat-VariableFont_wght.ttf) format('truetype-variations');
+    src: url("../fonts/Montserrat/Montserrat-VariableFont_wght.ttf") format('truetype-variations');
     font-style: normal;
 }
 @font-face {
     font-family: 'Monsterrat';
-    src: url(/fonts/Montserrat/Montserrat-Italic-VariableFont_wght.ttf) format('truetype-variations');
+    src: url("../fonts/Montserrat/Montserrat-Italic-VariableFont_wght.ttf") format('truetype-variations');
     font-style: italic;
 }
 
