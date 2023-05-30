@@ -10,7 +10,7 @@ title: Lab
 email: your-email@domain.com
 description: > # this means to ignore newlines until "baseurl:"
   Website of the ? Lab.
-domain: labsite.github.io
+domain: labsite.site
 baseurl: /labsite/
 url: https://github.com/MstXy/labsite
 
