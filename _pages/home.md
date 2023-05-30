@@ -1,7 +1,7 @@
 ---
 title: "Lab"
 layout: homelay
-excerpt: "Allan Lab at Leiden University."
+excerpt: "Some Lab at xx University."
 sitemap: false
 permalink: /
 ---
