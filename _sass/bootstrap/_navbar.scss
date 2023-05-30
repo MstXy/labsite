@@ -10,7 +10,12 @@
 
 
 
-.navbar {
+.navbar {	
+  // for dynamic navbar
+  transform: translateY(0);
+  opacity: 100%;
+	transition: transform 0.3s, opacity 0.3s;
+  // for dynamic navbar
   position: relative;
   min-height: $navbar-height; // Ensure a navbar always shows (e.g., without a .navbar-brand in collapsed mode)
   margin-bottom: $navbar-margin-bottom;

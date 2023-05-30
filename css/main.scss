@@ -30,7 +30,7 @@ p { // slight delay for text to show
 }
 
 body {
-
+	// overflow: scroll;
 	padding-top: 125px;
 }
 
@@ -73,6 +73,13 @@ firstp {
 	text-decoration-color: #fff;
 	text-underline-offset: 100%;
 }
+
+// for hidding
+.navbar-hidden {
+	transform: translateY(-100%);
+	opacity: 0%;
+	transition: transform 0.3s, opacity 0.3s;
+  }
 
 /* Home, News */
 #newsid p {
