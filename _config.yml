@@ -10,7 +10,8 @@ title: Lab
 email: your-email@domain.com
 description: > # this means to ignore newlines until "baseurl:"
   Website of the ? Lab.
-url: ""
+url: https://mstxy.github.io  # the base hostname and protocol for your site, e.g. http://example.com
+baseurl: /labsite/
 
 include:
   - .htaccess
